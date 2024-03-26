@@ -9,4 +9,8 @@ jstring JNICALL
         const char* hello = "I am being called from C++";
         return env->NewStringUTF(hello);
     }
+    const char* getHelloWorld() {
+        return "Hello from C++";
+    }
 }
+

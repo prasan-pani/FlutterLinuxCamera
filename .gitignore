@@ -1,3 +1,6 @@
 /.idea
 **/app/.cxx/*
 /flutter_poc/android/app/.cxx
+/flutter_poc/src/libs
+/.idea
+/flutter_poc/src/obj

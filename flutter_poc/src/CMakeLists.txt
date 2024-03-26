@@ -7,4 +7,8 @@ add_library( # Specifies the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             hello_world.cpp )
+        hello_world.cpp)
+
+find_library( log-lib log )
+
+target_link_libraries( hello-world ${log-lib} )
