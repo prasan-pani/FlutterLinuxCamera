@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flutter_poc/android/flutter_linux_camera_android.iml" filepath="$PROJECT_DIR$/flutter_poc/android/flutter_linux_camera_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/flutter_poc/flutter_poc.iml" filepath="$PROJECT_DIR$/flutter_poc/flutter_poc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flutter_poc/android/flutter_poc_android.iml" filepath="$PROJECT_DIR$/flutter_poc/android/flutter_poc_android.iml" />
     </modules>
   </component>
 </project>
