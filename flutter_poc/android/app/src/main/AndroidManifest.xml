@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-feature android:name="android.hardware.camera" android:required="true"/>
-    <permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="true"/>
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:label="flutter_linux_camera"
+        android:label="VTS Flutter POC"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

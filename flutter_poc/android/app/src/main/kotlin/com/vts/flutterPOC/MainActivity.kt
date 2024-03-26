@@ -1,11 +1,21 @@
-package com.vts.camera.flutter_linux_camera
+package com.vts.flutterPOC
 
+import android.util.Log
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity: FlutterActivity() {
-    private val CHANNEL = "com.example.flutter_linux_camera_app/camera"
+    private val CHANNEL = "com.vts.flutterPOC/camera"
+
+    companion object {
+        init {
+            System.loadLibrary("hello-world")
+        }
+    }
+
+    // Declare the native method
+    external fun invokePrintHelloWorld(): String
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
@@ -17,5 +27,8 @@ class MainActivity: FlutterActivity() {
                 result.notImplemented()
             }
         }
+
+        val message = invokePrintHelloWorld()
+        Log.d("MainActivity", message)
     }
 }
